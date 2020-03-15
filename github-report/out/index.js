@@ -17,7 +17,7 @@ else {
     service.getUserInfo(userName_1, function (user) {
         service.getRepos(userName_1, function (repos) {
             var repoArr = _.sortBy(repos, [function (repo) { return repo.size * -1; }]);
-            user.setrepos(_.take(repoArr, 3));
+            user.setrepos(_.take(repoArr, 5));
             console.log(user);
         });
     });
